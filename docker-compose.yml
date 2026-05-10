@@ -1,0 +1,15 @@
+services:
+  loud-dev:
+    build: .
+    container_name: loud-host-dev
+    volumes:
+      # Mapeia seu código para a pasta /app do container
+      - .:/app
+      # CORREÇÃO: Mapeia o conhecimento para /data/knowledge dentro do container
+      - /Volumes/ion/Storage/data/projects/LOUD/knowledge:/data/knowledge:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    stdin_open: true
+    tty: true
