@@ -4,9 +4,6 @@ Projeto simples de Host para servidores MCP (Model Context Protocol).
 
 O objetivo deste projeto é atuar como uma camada intermediária entre clientes de IA e múltiplos MCP Servers, centralizando conexão, descoberta de ferramentas e orquestração de chamadas.
 
-Repositório oficial:
-https://github.com/tasugvo/host-mcp
-
 ---
 
 # O que é MCP?
